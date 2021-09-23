@@ -48,8 +48,8 @@ namespace IEWebBrowser
         private async void WebLogin()
         {
             await Task.Delay(1500);
-            webBrowser1.Document.GetElementById("id_email_2").SetAttribute("value", "ghqnftk@kakao.com");
-            webBrowser1.Document.GetElementById("id_password_3").SetAttribute("value", "wjddlfghk1");
+            webBrowser1.Document.GetElementById("id_email_2").SetAttribute("value", "사용자아이디");
+            webBrowser1.Document.GetElementById("id_password_3").SetAttribute("value", "비밀번호");
            
             await Task.Delay(1500);
             HtmlElementCollection loginButton = webBrowser1.Document.GetElementsByTagName("button");
